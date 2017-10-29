@@ -1,0 +1,65 @@
+<!DOCTYPE HTML>
+<html>
+<meta charset="UTF-8">
+<title>
+  Добавяне на избираема дисциплина
+</title>
+<body>
+  <h1 align="center">Добавяне на избираема дисциплина: </h1>
+  <table>
+    <form type="post" method="post"
+    action="/save_course.php"  accept-charset="UTF-8">
+    <tr>
+      <td>
+           Име на предмета:
+      </td>
+      <td>
+        <input type="text" name="subject" size = "60px">
+      </td>
+    </tr>
+    <tr>
+      <td>
+          Преподавател:
+      </td>
+      <td>
+        <input type="text" name="teacher" size = "60px">
+      </td>
+    </tr>
+    <tr>
+      <td>
+          Oписание на предмета:
+      </td>
+      <td>
+        <textarea name="description" rows="10" cols="55"></textarea>
+      </td>
+    </tr>
+    <tr>
+      <td>
+          Група:
+      </td>
+      <td>
+        <select name="group">
+           <option value="volvo">М</option>
+           <option value="saab">ПМ</option>
+           <option value="fiat">ОКН</option>
+           <option value="audi">ЯКН</option>
+         </select>
+      </td>
+    </tr>
+    <tr>
+      <td>
+          Кредити:
+      </td>
+      <td>
+      <input type="number" name="credit" min="0" />
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <input type="submit" value="Изпрати" />
+      </td>
+    </tr>
+  </form>
+  </table>
+</body>
+</html>
